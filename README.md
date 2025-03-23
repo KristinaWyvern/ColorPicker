@@ -1,3 +1,4 @@
+# Codedex - Color Picker
 Find freedom on this canvas. - Bob Ross
 
 What’s life without color? In the world of graphics software, color pickers are to the programmer what palettes are to the painter.
@@ -13,12 +14,12 @@ const [selectedColor, setSelectedColor] = useState({ hex: null, name: null });
 const [focusedIndex, setFocusedIndex] = useState(null);
 
 const colors = [
-  { name: "Blue", hex: "#a2dffe" },  
-  { name: "Green", hex: "#84e0d9" },
-  { name: "Yellow", hex: "#f2fad0" },
-  { name: "Orange", hex: "#fec08c" },      
-  { name: "Pink", hex: "#feb5d2" },
-  { name: "Violet", hex: "#eacae1" }
+  { name: "Red", hex: "#FF0000" },
+  { name: "Green", hex: "#00FF00" },
+  { name: "Blue", hex: "#0000FF" },
+  { name: "Yellow", hex: "#FFFF00" },
+  { name: "Cyan", hex: "#00FFFF" },
+  { name: "Magenta", hex: "#FF00FF" },
 ];
 ```
 
