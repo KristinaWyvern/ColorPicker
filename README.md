@@ -8,23 +8,26 @@ Create a new ColorPicker.jsx file in the src folder and define a functional Colo
 
 This component should use two state variables and a colors array:
 
+```javascript
 const [selectedColor, setSelectedColor] = useState({ hex: null, name: null });
 const [focusedIndex, setFocusedIndex] = useState(null);
 
 const colors = [
-  { name: "Red", hex: "#FF0000" },
-  { name: "Green", hex: "#00FF00" },
-  { name: "Blue", hex: "#0000FF" },
-  { name: "Yellow", hex: "#FFFF00" },
-  { name: "Cyan", hex: "#00FFFF" },
-  { name: "Magenta", hex: "#FF00FF" },
+  { name: "Blue", hex: "#a2dffe" },  
+  { name: "Green", hex: "#84e0d9" },
+  { name: "Yellow", hex: "#f2fad0" },
+  { name: "Orange", hex: "#fec08c" },      
+  { name: "Pink", hex: "#feb5d2" },
+  { name: "Violet", hex: "#eacae1" }
 ];
+```
+
 The selectedColor state is an object with a hex and name prop, each set to null. The focusedIndex will be an integer representing the index of the colors currently selected.
 
 To keep things simple, we will only use six colors. Feel free to add or remove colors if you'd like!
 
 The return function should contain the following:
-
+```javascript
 <div className="color-picker">
   <h1>Color Picker</h1>
   <div className="color-list">
@@ -48,11 +51,13 @@ The return function should contain the following:
     ))}
   </div>
 </div>
+```
 It is up to you to define the event handlers for this component, including:
-
+```javascript
 handleClick()
 handleMouseEnter()
 handleMouseLeave()
 handleFocus()
 handleBlur()
 handleKeyDown()
+```
