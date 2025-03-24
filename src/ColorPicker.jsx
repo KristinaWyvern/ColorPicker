@@ -31,18 +31,18 @@ export default function EventInvitation() {
       }
     
     function handleKeyDown(e) {
-        let newIndex = focusedIndex;
+        let nextIndex = focusedIndex;
     
         if (e.key === 'ArrowRight') {
-            newIndex = focusedIndex + 1;
+            nextIndex = focusedIndex + 1;
         } else if (e.key === 'ArrowLeft') {
-            newIndex = focusedIndex - 1;
+            nextIndex = focusedIndex - 1;
         }
     
-        if (newIndex < 0 || newIndex >= colors.length) return;
+        if (nextIndex < 0 || nextIndex >= colors.length) return;
     
-        setFocusedIndex(newIndex);
-        setSelectedColor(colors[newIndex]);
+        setFocusedIndex(nextIndex);
+        setSelectedColor(colors[nextIndex]);
     }
 
 
